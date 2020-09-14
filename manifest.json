@@ -1,0 +1,16 @@
+{
+    "name":"fun",
+    "version":"1.0",
+    "manifest_version":2,
+    "permissions": ["tabs","http://avrl-vikash-arena-dot-vikash-avrl-live.appspot.com/static/test_page1.html","http://avrl-vikash-arena-dot-vikash-avrl-live.appspot.com/static/test_page2.html","http://avrl-vikash-arena-dot-vikash-avrl-live.appspot.com/static/test_page3.html"],
+    "background":{
+        "scripts":["background.js"]
+    },
+    "content_scripts":[{
+        "matches":["<all_urls>"],
+        "js":["content.js"]
+    }],
+    "browser_action":{
+        "default_popup":"popup.html"
+    }
+}
